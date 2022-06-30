@@ -28,10 +28,8 @@ export default function handler(
 ) {
   const { tokenId } = validate(req.query);
 
-  const editionDigit = ('0' + tokenId).slice(-2);
-
   const tokenMeta = {
-    name: `BIRTH ${editionDigit}`,
+    name: `BIRTH`,
     description: 'BIRTH is a 2022 release by PRINCESS BLEACH.',
     external_url: 'https://princessbleach.com/',
     image: `https://princessbleach.com/drops/birth/${tokenId}.png`,
