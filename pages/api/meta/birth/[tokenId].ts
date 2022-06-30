@@ -35,7 +35,7 @@ export default function handler(
     description: 'BIRTH is a 2022 release by PRINCESS BLEACH.',
     external_url: 'https://princessbleach.com/',
     image: `https://princessbleach.com/drops/birth/${tokenId}.png`,
-    animation_url: 'https://princessbleach.com/drops/birth.mp4',
+    animation_url: 'https://princessbleach.com/drops/birth.mp3',
   };
 
   res.status(200).json(tokenMeta);
