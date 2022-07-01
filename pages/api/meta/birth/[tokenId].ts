@@ -47,6 +47,21 @@ export default function handler(
         trait_type: 'Edition',
         value: tokenId,
       },
+      {
+        display_type: 'location_number',
+        trait_type: 'Latitude',
+        value: 40.765509323990656,
+      },
+      {
+        display_type: 'location_number',
+        trait_type: 'Longitude',
+        value: -73.97059820831649,
+      },
+      {
+        display_type: 'location_number',
+        trait_type: 'Elevation (meters)',
+        value: 8,
+      },
     ],
   };
 
