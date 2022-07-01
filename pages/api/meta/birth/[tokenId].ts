@@ -48,17 +48,17 @@ export default function handler(
         value: tokenId,
       },
       {
-        display_type: 'location_number',
+        display_type: 'number',
         trait_type: 'Latitude',
         value: 40.765509323990656,
       },
       {
-        display_type: 'location_number',
+        display_type: 'number',
         trait_type: 'Longitude',
         value: -73.97059820831649,
       },
       {
-        display_type: 'location_number',
+        display_type: 'number',
         trait_type: 'Elevation (meters)',
         value: 8,
       },
