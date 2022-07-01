@@ -27,8 +27,7 @@ export default function handler(
   res: NextApiResponse<TokenMeta>
 ) {
   const { tokenId } = validate(req.query);
-
-  const editionDigit = ('0' + tokenId).slice(-2);
+  const editionDigit = ('000' + tokenId).slice(-4);
 
   const tokenMeta = {
     name: `PARTICLES ${editionDigit}`,
