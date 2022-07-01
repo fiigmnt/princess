@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+// TODO: update to include degrees utility function and attributes
 type TokenMeta = {
   name: string;
   description: string;
@@ -49,12 +50,17 @@ export default function handler(
       },
       {
         trait_type: 'Latitude',
-        value: 40.765509323990656,
+        value: `40° 45' 55.8324"`,
       },
       {
         trait_type: 'Longitude',
-        value: -73.97059820831649,
+        value: `-73° 58' 14.1522"`,
       },
+      {
+        trait_type: 'Elevation',
+        value: `2.0m`,
+      },
+      
       {
         display_type: "date", 
         trait_type: "dropped", 
