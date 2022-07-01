@@ -30,8 +30,8 @@ export default function handler(
   const editionDigit = ('000' + tokenId).slice(-4);
 
   const tokenMeta = {
-    name: `PARTICLES ${editionDigit}`,
-    description: 'PARTICLES is a 2022 genesis collection, built on Mirage',
+    name: `FRAGMENTS: VAN ${editionDigit}`,
+    description: 'FRAGMENTS is a 2022 genesis collection by Fiigmnt, built on MIRAGE.',
     external_url: 'https://princessbleach.com/',
     image: `https://princessbleach.com/drops/birth/${tokenId}.png`,
     animation_url: 'https://princessbleach.com/tester/index.html',
