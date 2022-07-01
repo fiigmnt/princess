@@ -31,7 +31,7 @@ export default function handler(
   // const editionDigit = ('0' + tokenId).slice(-2);
 
   const tokenMeta = {
-    name: `GENESIS VAN #${tokenId}`,
+    name: `MIRAGE GENESIS #${tokenId}`,
     description:
       'GENESIS is a 2022 genesis collection by Fiigmnt, built on Mirage.',
     external_url: 'https://princessbleach.com/',
@@ -40,32 +40,41 @@ export default function handler(
     animation_url: 'https://princessbleach.com/tester/index.html',
     attributes: [
       {
-        trait_type: 'Model',
-        value: 'Van',
-      },
-      {
         display_type: 'number',
         trait_type: 'Edition',
         value: tokenId,
       },
       {
-        trait_type: 'Latitude',
-        value: `40° 45' 55.8324"`,
+        // trait_type: 'Models',
+        pointcloud: 'Chinatown Van',
       },
       {
-        trait_type: 'Longitude',
-        value: `-73° 58' 14.1522"`,
+        // trait_type: 'Latitude',
+        latitude: `40° 45' 55.8324"`,
       },
       {
-        trait_type: 'Elevation',
-        value: `2.0m`,
+        // trait_type: 'Longitude',
+        longitude: `-73° 58' 14.1522"`,
       },
-      
       {
-        display_type: "date", 
-        trait_type: "dropped", 
-        value: 1546360800
-      }
+        elevation: `2.1 meters`
+      },
+      {
+        display_type: 'date',
+        trait_type: 'dropped',
+        value: 1546360800,
+      },
+      {
+        display_type: 'date',
+        trait_type: 'claimed',
+        value: 1646360800,
+      },
+      // IF USER HAS MOVED ITEM SHOW REBASE DATE
+      {
+        display_type: 'date',
+        trait_type: 'rebased',
+        value: 1656698855,
+      },
     ],
   };
 
