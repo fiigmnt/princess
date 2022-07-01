@@ -31,8 +31,8 @@ export default function handler(
   const editionDigit = ('0' + tokenId).slice(-2);
 
   const tokenMeta = {
-    name: `BIRTH ${editionDigit}`,
-    description: 'BIRTH is a 2022 release by PRINCESS BLEACH.',
+    name: `PARTICLES ${editionDigit}`,
+    description: 'PARTICLES is a 2022 genesis collection, built on Mirage',
     external_url: 'https://princessbleach.com/',
     image: `https://princessbleach.com/drops/birth/${tokenId}.png`,
     animation_url: 'https://princessbleach.com/tester/index.html',
