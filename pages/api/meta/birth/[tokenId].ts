@@ -27,10 +27,10 @@ export default function handler(
   res: NextApiResponse<TokenMeta>
 ) {
   const { tokenId } = validate(req.query);
-  const editionDigit = ('000' + tokenId).slice(-4);
+  const editionDigit = ('0' + tokenId).slice(-2);
 
   const tokenMeta = {
-    name: `FRAGMENTS: VAN ${editionDigit}`,
+    name: `FRAGMENTS: VAN #${editionDigit}`,
     description: 'FRAGMENTS is a 2022 genesis collection by Fiigmnt, built on MIRAGE.',
     external_url: 'https://princessbleach.com/',
     image: `https://princessbleach.com/drops/birth/${tokenId}.png`,
