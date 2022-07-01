@@ -56,13 +56,13 @@ export default function handler(
         trait_type: 'longitude',
         value: `-73° 58' 14.1522"`,
       },
-      {
-        trait_type: "elevation",
-        value: `2.1 meters`
-      },
+      // {
+      //   trait_type: "elevation",
+      //   value: `2.1 meters`
+      // },
       {
         display_type: 'date',
-        trait_type: 'dropped',
+        trait_type: 'Artist Dropped',
         value: 1546360800,
       },
       {
