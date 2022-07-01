@@ -30,10 +30,10 @@ export default function handler(
   const editionDigit = ('0' + tokenId).slice(-2);
 
   const tokenMeta = {
-    name: `FRAGMENTS: VAN #${editionDigit}`,
-    description: 'FRAGMENTS is a 2022 genesis collection by Fiigmnt, built on Mirage.',
+    name: `GENESIS: VAN #${editionDigit}`,
+    description: 'GENESIS is a 2022 genesis collection by Fiigmnt, built on Mirage.',
     external_url: 'https://princessbleach.com/',
-    image: `https://princessbleach.com/drops/birth/${tokenId}.png`,
+    image: "https://openseauserdata.com/files/039fe93c7e0043816108fd7e97abb671.gif",
     animation_url: 'https://princessbleach.com/tester/index.html',
   };
 
