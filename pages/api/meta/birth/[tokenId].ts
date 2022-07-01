@@ -27,14 +27,27 @@ export default function handler(
   res: NextApiResponse<TokenMeta>
 ) {
   const { tokenId } = validate(req.query);
-  const editionDigit = ('0' + tokenId).slice(-2);
+  // const editionDigit = ('0' + tokenId).slice(-2);
 
   const tokenMeta = {
-    name: `GENESIS: VAN #${editionDigit}`,
-    description: 'GENESIS is a 2022 genesis collection by Fiigmnt, built on Mirage.',
+    name: `GENESIS VAN #${tokenId}`,
+    description:
+      'GENESIS is a 2022 genesis collection by Fiigmnt, built on Mirage.',
     external_url: 'https://princessbleach.com/',
-    image: "https://openseauserdata.com/files/039fe93c7e0043816108fd7e97abb671.gif",
+    image:
+      'https://openseauserdata.com/files/039fe93c7e0043816108fd7e97abb671.gif',
     animation_url: 'https://princessbleach.com/tester/index.html',
+    attributes: [
+      {
+        trait_type: 'Model',
+        value: 'Van',
+      },
+      {
+        display_type: 'number',
+        trait_type: 'Edition',
+        value: tokenId,
+      },
+    ],
   };
 
   res.status(200).json(tokenMeta);
