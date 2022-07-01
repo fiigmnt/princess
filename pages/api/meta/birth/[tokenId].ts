@@ -41,23 +41,24 @@ export default function handler(
     attributes: [
       {
         display_type: 'number',
-        trait_type: 'Edition',
+        trait_type: 'edition',
         value: tokenId,
       },
       {
-        // trait_type: 'Models',
-        pointcloud: 'Chinatown Van',
+        trait_type: 'cloud',
+        value: 'Chinatown Van',
       },
       {
-        // trait_type: 'Latitude',
-        latitude: `40° 45' 55.8324"`,
+        trait_type: 'latitude',
+        value: `40° 45' 55.8324"`,
       },
       {
-        // trait_type: 'Longitude',
-        longitude: `-73° 58' 14.1522"`,
+        trait_type: 'longitude',
+        value: `-73° 58' 14.1522"`,
       },
       {
-        elevation: `2.1 meters`
+        trait_type: "elevation",
+        value: `2.1 meters`
       },
       {
         display_type: 'date',
