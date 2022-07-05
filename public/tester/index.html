@@ -1,9 +1,61 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="icon" href="data:;base64,iVBORwOKGO=" /> <!--Makes the favicon nothing to prevent a consol error-->
-    </head>
-    <body style="background-color: black; margin: 0; overflow: hidden;">
-        <canvas id="rustCanvas"></canvas>
-    <script type="text/javascript" src="./main.37875302514230ad5589.js"></script></body>
-</html>
+<!doctype html><html><head><title>MIRAGE CLOUD VIEWER</title><script defer="defer" src="main.6eadc62349a5e8790d69.js"></script></head><body style="background: rgb(19, 20, 20);
+      background: radial-gradient(
+        circle,
+        rgba(19, 20, 20, 1) 0%,
+        rgba(33, 44, 57, 1) 100%
+      );
+      margin: 0;
+      overflow: hidden;
+      touch-action: none;"><canvas id="rustCanvas"></canvas><script>function touchHandler(event) {
+        var touches = event.changedTouches,
+          first = touches[0],
+          type = '';
+        switch (event.type) {
+          case 'touchstart':
+            type = 'mousedown';
+            break;
+          case 'touchmove':
+            type = 'mousemove';
+            break;
+          case 'touchend':
+            type = 'mouseup';
+            break;
+          default:
+            return;
+        }
+
+        // initMouseEvent(type, canBubble, cancelable, view, clickCount,
+        //                screenX, screenY, clientX, clientY, ctrlKey,
+        //                altKey, shiftKey, metaKey, button, relatedTarget);
+
+        var simulatedEvent = document.createEvent('MouseEvent');
+        simulatedEvent.initMouseEvent(
+          type,
+          true,
+          true,
+          window,
+          1,
+          first.screenX,
+          first.screenY,
+          first.clientX,
+          first.clientY,
+          false,
+          false,
+          false,
+          false,
+          0 /*left*/,
+          null
+        );
+
+        first.target.dispatchEvent(simulatedEvent);
+        event.preventDefault();
+      }
+
+      function init() {
+        document.addEventListener('touchstart', touchHandler, true);
+        document.addEventListener('touchmove', touchHandler, true);
+        document.addEventListener('touchend', touchHandler, true);
+        document.addEventListener('touchcancel', touchHandler, true);
+      }
+
+      init();</script></body></html>
